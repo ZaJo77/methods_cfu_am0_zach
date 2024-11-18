@@ -8,19 +8,27 @@
 # The return value is "hello world"
 "Hello World".downcase
 
-
+# The include method is called on the string object "Hello World"
+# The argument "Hello" is passed and include is used to check whether a specific element is present in an array or not
+# The return value is true.
 "Hello World".include?("Hello")
 
-
+# The end_with method is called on the string object "Hello World"
+# The argument "Hello" is passed and end_with? is used to check if a string ends with a specific substring or suffixes
+# The return value is false.
 "Hello World".end_with?("Hello")
 
-
+# The end_with method is called on the string object "Hello World"
+# The argument "rld" is passed and end_with? is used to check if a string ends with a specific substring or suffixes
+# The return value is true.
 "Hello World".end_with?("rld")
 
-
+# The even method is called on the integer 12
+# The even method determines if an integer is even and the output here is true
 12.even?
 
-
+# The next method is called on the integer 18
+# The next method determines the number that comes after the integer in the line of code
 18.next
 
 
@@ -30,6 +38,15 @@
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/String.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+pizza_description = "good"
+cookie_description = "gooder"
+
+# The capitalize method is called on the variable pizza_description and capitalizes the first character the string
+puts pizza_description.capitalize
+
+# The length method is called on the variable cookie_description and counts the number of charcters in the string
+puts cookies_description.length
 
 # EXAMPLE
 # The start_with? method is called on the first_name variable, which stores the string object "Jeff". 
@@ -47,6 +64,16 @@ puts first_name.start_with?("J")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+num1 = 8
+num2 = 3
+
+# The even method is called on the variable num1 which outputs if the integer is even. Output is true.
+num1.even?
+
+# The succ method is called on the variable num2 which output the successor of the integer. Output is 4.
+num2.succ
+
+
 
 
 # SECTION 4: Calling methods on variables assigned to arrays.
@@ -54,3 +81,12 @@ puts first_name.start_with?("J")
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+favorite_numbers = [7, 8, 14]
+bad_numbers = [0, 6, 13]
+
+# The drop method is called on the array named favorite_numbers which deletes a selected element from the array.
+favorite_numbers.drop(1)
+
+# The first method is called on the array named bad_numbers which outputs the first element within the array.
+bad_numbers.first
